@@ -14,11 +14,12 @@ $request = new GetTaxRequest();
 //     O: Indicates Optional Element
 //
     $dateTime = new DateTime();                                  // R: Sets dateTime format 
-    $request->setCompanyCode("APITrialCompany");                    // R: Company Code from the accounts Admin Console
+    $request->setCompanyCode("Abc");                    // R: Company Code from the accounts Admin Console
+	$request->setCustomerCode("SubA");
     $request->setDocType(DocumentType::$SalesOrder);                           // R: Typically SalesOrder,SalesInvoice, ReturnInvoice
-    $request->setDocCode("INV123125");                          // R: Invoice or document tracking number - Must be unique
+    //$request->setDocCode("INV123125");                          // R: Invoice or document tracking number - Must be unique
     $request->setDocDate(date_format($dateTime, "Y-m-d"));  // R: Date the document is processed and Taxed - See TaxDate
-    $request->setCustomerCode("CUST123125");             // R: String - Customer Tracking number or Exemption Customer Code
+    //$request->setDocCode("CUST123125");             // R: String - Customer Tracking number or Exemption Customer Code
     //$request->setCustomerUsageType("");      // O: String   Entity Usage
     //$request->setDiscount(0);                   // O: Decimal - amount of total document discount
     //$request->setPurchaseOrderNo("");    // O: String 
@@ -48,7 +49,7 @@ $request = new GetTaxRequest();
     //$destination->setLine1("75 Washington Pl");   
 	//$destination->setCity("New York");      
     //$destination->setRegion("NY");         
-    $destination->setPostalCode("94539");
+    $destination->setPostalCode("35015");
     $destination->setAddressCode("02");       
 	$addresses[] = $destination;				// 		Adds the address to our array of addresses on the request.
 	
