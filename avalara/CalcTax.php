@@ -49,7 +49,7 @@ $request = new GetTaxRequest();
     //$destination->setLine1("75 Washington Pl");   
 	//$destination->setCity("New York");      
     //$destination->setRegion("NY");         
-    $destination->setPostalCode("84028");
+    $destination->setPostalCode("35022");
     $destination->setAddressCode("02");       
 	$addresses[] = $destination;				// 		Adds the address to our array of addresses on the request.
 	

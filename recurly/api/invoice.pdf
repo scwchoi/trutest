@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Internal Server Error - Recurly</title>
+    <style type='text/css'>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #d7d9dc;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        overflow: hidden;
+        padding: 75px 68px 35px;
+      }
+      .page-wrap {
+        background: #d7d9dc url('https://static-sc.recurly.com/assets/error_page_bg.jpg') no-repeat center center;
+        height: 356px;
+        margin: 100px auto 20px;
+        overflow: hidden;
+        width: 623px;
+      }
+      ul {
+        list-style: none inside none;
+        margin: 0;
+        padding: 25px 0 0;
+      }
+      li {
+        float: left;
+        padding: 0 35px 0 0;
+      }
+      h1, h2 {
+        color: #393939;
+        display: block;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 45px 0 23px;
+      }
+      h2 {
+        color: #aa3333;
+        font-size: 21px;
+        margin: 0 0 23px;
+      }
+      img {
+        border: 0 none transparent;
+        height: 58px;
+        width: 58px;
+      }
+      p {
+        color: #393939;
+        font-size: 13px;
+        line-height: 21px;
+        margin: .5em 0;
+      }
+      .aftertext {
+        text-align: center;
+        margin: 0 auto;
+        width: 613px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='page-wrap'>
+      <div class='page'>
+        <div id='oh-noes' class='section'>
+          <h1>Uh Oh...</h1>
+          <h2>Error 500: Internal Server Error</h2>
+          <p>We're sorry, this was clearly not part of the plan.</p>
+          <p>We're now aware of this issue, and will be attacking with force shortly.</p>
+        </div>
+      </div>
+    </div>
+    <p class='aftertext'>If you continue to receive this message, please report it to <a href='mailto:support@recurly.com'>support@recurly.com</a>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try{
+      var pageTracker = _gat._getTracker("UA-10003220-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+  </body>
+</html>
