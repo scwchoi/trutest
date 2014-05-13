@@ -1,0 +1,20 @@
+<script src="https://js.recurly.com/v3/recurly.js"></script>
+<form>
+  <input type="text" data-recurly="number">
+  <input type="text" data-recurly="cvv">
+  <input type="text" data-recurly="month">
+  <input type="text" data-recurly="year">
+  <input type="hidden" data-recurly="token" name="recurly-token">
+  <button>subscribe<button>
+</form>
+<script>
+  recurly.configure({ publicKey: 'your-public-key' });
+
+  $('form').on('click', function (event) {
+    var form = this;
+    event.preventDefault();
+    recurly.token(form, function (err, token) {
+      form.submit();
+    });
+  });
+</script>
